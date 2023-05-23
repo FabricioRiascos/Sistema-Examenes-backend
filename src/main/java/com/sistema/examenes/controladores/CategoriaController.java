@@ -34,7 +34,7 @@ public class CategoriaController {
     public Categoria actualizarCategoria(@RequestBody Categoria categoria){
         return categoriaService.actualizarCategoria(categoria);
     }
-    @DeleteMapping("/{categoriaI}d")
+    @DeleteMapping("/{categoriaId}")
     public void eliminarCategoria(@PathVariable("categoriaId")Long categoriaId){
         categoriaService.eliminarCategoria(categoriaId);
     }
