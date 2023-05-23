@@ -8,7 +8,7 @@ public interface CategoriaService {
 
     Categoria agregarCategoria(Categoria categoria);
     Categoria actualizarCategoria(Categoria categoria);
-    Set<Categoria> ObtenerCategorias();
+    Set<Categoria> obtenerCategorias();
     Categoria obtenerCategoria(Long categoriaId);
     void eliminarCategoria(Long categoriaId);
 }

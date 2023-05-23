@@ -24,7 +24,7 @@ public class CategoriaServiceImpl implements CategoriaService {
     }
 
     @Override
-    public Set<Categoria> ObtenerCategorias() {
+    public Set<Categoria> obtenerCategorias() {
         return new LinkedHashSet<>(categoriaRepository.findAll());
     }
 
