@@ -16,6 +16,8 @@ public class Pregunta {
     private  String opcion3;
     private  String opcion4;
     private  String respuesta;
+    @Transient
+    private String respuestaDada;
     @ManyToOne(fetch = FetchType.EAGER)
     private Examen examen;
 
@@ -89,6 +91,14 @@ public class Pregunta {
 
     public void setExamen(Examen examen) {
         this.examen = examen;
+    }
+
+    public String getRespuestaDada() {
+        return respuestaDada;
+    }
+
+    public void setRespuestaDada(String respuestaDada) {
+        this.respuestaDada = respuestaDada;
     }
 
     public Pregunta() {
